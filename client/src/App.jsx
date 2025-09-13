@@ -1,12 +1,16 @@
 import React from 'react'
+import Header from './component/Header'
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes";
 
 const App = () => {
   return (
-    <div>
-       <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-    </div>
+   <>
+    <BrowserRouter>
+      <Header />
+      <AppRoutes />
+    </BrowserRouter>
+   </>
   )
 }
 
